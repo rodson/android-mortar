@@ -27,7 +27,7 @@ import java.util.Set;
  */
 public class DownloadTask extends AsyncTask<String, String, Object> {
     private static final int DEFAULT_TIMEOUT = 20 * 1000; //TODO 14-11-14 ok ? Same as android download thread
-    private static final int BUFFER_SIZE = 4 * 1024;
+    private static final int BUFFER_SIZE = 64 * 1024;
     private static final String REQUEST_METHOD = "GET";
     private DownloadEntry mDownloadEntry;
     private Handler mHandler;
